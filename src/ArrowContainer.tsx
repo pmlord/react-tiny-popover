@@ -17,6 +17,7 @@ const ArrowContainer: React.StatelessComponent<ArrowContainerProps> = ({
     position,
     children,
     style,
+    className,
     arrowColor = Constants.DEFAULT_ARROW_COLOR,
     arrowSize = 10,
     arrowStyle,
@@ -24,6 +25,7 @@ const ArrowContainer: React.StatelessComponent<ArrowContainerProps> = ({
     targetRect,
 }) => (
         <div
+            className={className}
             style={{
                 paddingLeft: position === 'right' ? arrowSize : 0,
                 paddingTop: position === 'bottom' ? arrowSize : 0,

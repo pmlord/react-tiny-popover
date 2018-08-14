@@ -51,6 +51,7 @@ export declare interface ArrowContainerProps {
     targetRect: ClientRect;
     popoverRect: ClientRect;
     style?: React.CSSProperties;
+    className?: string;
     arrowSize?: number;
     arrowColor?: any;
     arrowStyle?: React.CSSProperties;
